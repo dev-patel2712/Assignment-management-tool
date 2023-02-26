@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <script src="script.js"></script>
+<h1>ASSIGNMENT MANAGEMENT TOOL</h1>
+    <div class ="buttons">
+        <button type="button" id="add" onclick="displayaddassignment()">ADD ASSIGNMENT</button>
+        <button type="button" id="past"onclick="pastassignment()">PAST ASSIGNMENT</button>
+        <button type="button" id="future" onclick="futureassignment()">FUTURE ASSIGNMENT</button>
+
+    </div>
+    <div class ="buttons1">
+        <label for="">TITLE</label>
+        <input type="text" id="title">
+        <label for="">DESCRIPTION</label>
+        <textarea id="description" name="w3review" rows="6" cols="55"></textarea>
+
+        <label for="" >BATCH NAME</label>
+
+        <input type="text" id="batchname">
+        <label for="">DUE DATE</label>
+
+        <input type="date"id="duedate">
+<button id="submitbutton" onclick="submit()">SUBMIT</button>    </div>
+
+
+        <div id="tab">
+            <table id ="ta" class="beforepress">
+                <tr>
+                  <th>TITLE</th>
+                  <th>BATCH NAME</th>
+                  <th>DESCRIPTION</th>
+                  <th>DUE DATE </th>
+                </tr>
+                
+              </table>
+
+        </div>
+
+ <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script> 
+</body>
+
+</html>
